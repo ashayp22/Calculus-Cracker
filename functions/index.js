@@ -9,22 +9,14 @@ const bodyParser = require('body-parser');
 const exec = require('child_process').exec;
 const path = require('path');
 const firebase = require("firebase");
-// const mv = require("mv");
-// const multiparty = require('multiparty');
+
 
 firebase.initializeApp({
-    apiKey: "AIzaSyDwOotyQ7PFpHcHCJt37KsacKVIgFYd9Zk",
-    authDomain: "node-app-f341a.firebaseapp.com",
-    databaseURL: "https://node-app-f341a.firebaseio.com",
-    projectId: "node-app-f341a",
-    storageBucket: "node-app-f341a.appspot.com",
-    messagingSenderId: "108945831278",
-    appId: "1:108945831278:web:bdc3929c03dada0c917d7f"
+    
 });
 
 admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://node-app-f341a.firebaseio.com"
+    
 });
 
 const db = admin.firestore();
