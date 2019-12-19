@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Calculus Cracker</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/portal.css" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "scripts/main.js"></script>
+
+</head>
+<body onload = "getData()">
+  <div id = "overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" style = "font-size: 40px; color: white">Calculus Cracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" onclick = "gotohome()" style = "font-size: 30px; color: white">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick = "gotoportal()" style = "font-size: 30px; color: white">Portal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick = "gotoresources()" style = "font-size: 30px; color: white">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "loginBtn" onclick = "gotosignin()" style = "font-size: 30px; color: white">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "welcomeText" style = "font-size: 30px; color: white"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "logoutBtn" onclick = "logout()" style = "font-size: 30px; color: white">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id = "data1">
+    <h1>Previous Answers</h1>
+    <p id = "previous"></p>
+    <br>
+    <input type = "button" class = "btn" onclick = "clearSaved()" value = "Clear Saved">
+
+  </div>
+
+  <div id = "data2">
+    <h1>Draw the Equation</h1>
+    <p id = "data2p">Only use the variables v, w, or z</p>
+    <canvas id="canvas" width="1000" height="500"></canvas>
+    <br>
+    <select id = "pen" name = "pen" onchange = "updatePen()">
+               <option value = "pencil">pencil</option>
+               <option value = "eraser">eraser</option>
+    </select>
+    <input type = "button" class = "btn" onclick = "clearCanvas()" value = "Clear Canvas">
+    <input type = "button" class = "btn" onclick = "updateEquation()" value = "Add to Equation">
+    <input type = "button" id = "boundBtn" class = "btn" onclick = "updateBound()" value = "Add to Bound">
+    <input type = "button" id = "lowerBtn" class = "btn" onclick = "updateLower()" value = "Add to Lower Bound">
+    <input type = "button" id = "upperBtn" class = "btn" onclick = "updateUpper()" value = "Add to Upper Bound">
+    <input type = "button" class = "btn" onclick = "switchToButton()" value = "Switch to Button Mode">
+
+    <br>
+  </div>
+
+  <div id = "data4">
+    <h1>Enter the Equation</h1>
+    <p id = "data2p">Only use the variables v, w, or z</p>
+    <input type = "button" class = "other" onclick = "addToEquation('+')" value = "+">
+    <input type = "button" class = "other" onclick = "addToEquation('-')"value = "-">
+    <input type = "button" class = "other" onclick = "addToEquation('×')" value = "×">
+    <input type = "button" class = "other" onclick = "addToEquation('/')" value = "/">
+    <input type = "button" class = "other" onclick = "addToEquation('π')" value = "π">
+    <input type = "button" class = "other" onclick = "addToEquation('e')" value = "e"><br>
+
+    <input type = "button" class = "functions" onclick = "addToEquation('sin')" value = "sin">
+    <input type = "button" class = "functions" onclick = "addToEquation('cos')" value = "cos">
+    <input type = "button" class = "numbers" onclick = "addToEquation('1')" value = "1">
+    <input type = "button" class = "numbers" onclick = "addToEquation('2')" value = "2">
+    <input type = "button" class = "numbers" onclick = "addToEquation('3')" value = "3">
+    <input type = "button" class = "other" onclick = "addToEquation('√')" value = "√"><br>
+
+    <input type = "button" class = "functions" onclick = "addToEquation('tan')" value = "tan">
+    <input type = "button" class = "functions" onclick = "addToEquation('csc')" value = "csc">
+    <input type = "button" class = "numbers" onclick = "addToEquation('4')" value = "4">
+    <input type = "button" class = "numbers" onclick = "addToEquation('5')" value = "5">
+    <input type = "button" class = "numbers" onclick = "addToEquation('6')" value = "6">
+    <input type = "button" class = "other" onclick = "addToEquation('(')" value = "(">
+    <br>
+
+    <input type = "button" class = "functions" onclick = "addToEquation('sec')" value = "sec">
+    <input type = "button" class = "functions" onclick = "addToEquation('cot')" value = "cot">
+    <input type = "button" class = "numbers" onclick = "addToEquation('7')" value = "7">
+    <input type = "button" class = "numbers" onclick = "addToEquation('8')" value = "8">
+    <input type = "button" class = "numbers" onclick = "addToEquation('9')" value = "9">
+    <input type = "button" class = "other" onclick = "addToEquation(')')" value = ")"><br>
+
+
+    <input type = "button" class = "functions" onclick = "addToEquation('arcsin')" value = "arcsin">
+    <input type = "button" class = "functions" onclick = "addToEquation('arccos')" value = "arccos">
+    <input type = "button" class = "numbers" onclick = "addToEquation('0')" value = "0">
+    <input type = "button" class = "vars" onclick = "addToEquation('v')" value = "v">
+    <input type = "button" class = "vars" onclick = "addToEquation('w')" value = "w">
+    <input type = "button" class = "other" onclick = "addToEquation('^')" value = "^">
+
+    <br>
+
+    <input type = "button" class = "functions" onclick = "addToEquation('arccot')" value = "arccot">
+    <input type = "button" class = "functions" onclick = "addToEquation('arctan')" value = "arctan">
+    <input type = "button" class = "functions" onclick = "addToEquation('arccsc')" value = "arccsc">
+    <input type = "button" class = "functions" onclick = "addToEquation('arcsec')"value = "arcsec">
+    <input type = "button" class = "functions" onclick = "addToEquation('ln')" value = "ln">
+    <input type = "button" class = "functions" onclick = "addToEquation('log')" value = "log">
+    <br>
+    <br>
+    <input type = "button" class = "btn" onclick = "deleteEquation()" value = "Delete">
+    <input type = "button" class = "btn" onclick = "clearEquation()" value = "Clear Equation">
+    <input type = "button" class = "btn" onclick = "switchToDraw()" value = "Switch to Drawing Mode">
+  </div>
+
+  <br>
+  <br>
+  <div id = "data3">
+    <div>
+        <p id = "error"></p>
+        <label for="equation" class = "text" style = "font-weight: bold">Equation</label>
+        <input type="text" id="equation" name="equation" required>
+    </div>
+    <p>Type of Question</p>
+    <select id = "type" name = "type" onchange = "showExtra()">
+               <option value = "derivative">derivative - d/dx</option>
+               <option value = "integral">indefinite integral - ∫</option>
+               <option value = "limit">limit - lim</option>
+               <option value = "definite integral">definite integral - ∫</option>
+               <option value = "summation">summation - Σ</option>
+               <option value = "product">product - ∏</option>
+    </select>
+    <p id = "boundsText">bound</p>
+    <input type="text" id="bounds" name="bounds"><br>
+    <p id = "lowerText">lower bound</p>
+    <input type="text" id="lower" name="lower"><br>
+    <p id = "upperText">upper bound</p>
+    <input type="text" id="upper" name="upper">
+    <br>
+    <br>
+    <input type = "button" class = "btn" onclick = "calculate()" value = "Calculate">
+
+    <p id = "answer">Answer: </p>
+
+  </div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

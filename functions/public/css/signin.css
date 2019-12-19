@@ -1,0 +1,90 @@
+body {
+    background: url('handwritten.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Baskervville', serif;
+  text-align: center;
+}
+
+#data {
+  /* width: 500px;
+  height: 500px; */
+  background-color: coral;
+  border: 7px ridge #FFA54A;
+  display: inline-block;
+  margin-top: 200px;
+}
+
+@media (max-width: 600px) {
+  #data {
+   margin-top: 100px;
+ }
+}
+
+.field {
+  height:50px;
+  width: 300px;
+  font-size:3vh;
+}
+
+.text {
+  font-size: 4vh;
+}
+
+h1 {
+  font-size: 8vh;
+}
+
+#loginbtn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #d6d6d6 5%, #f5f2f5 100%);
+	background-color:#d6d6d6;
+	border-radius:17px;
+	border:1px solid #b8b6b8;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Times New Roman;
+	font-size:22px;
+	font-weight:bold;
+	padding:7px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+
+#loginbtn:hover {
+	background:linear-gradient(to bottom, #f5f2f5 5%, #d6d6d6 100%);
+	background-color:#f5f2f5;
+}
+#loginbtn:active {
+	position:relative;
+	top:1px;
+}
+
+
+.signupbtn {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #d6d6d6 5%, #f5f2f5 100%);
+	background-color:#d6d6d6;
+	border-radius:17px;
+	border:1px solid #b8b6b8;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Times New Roman;
+	font-size:22px;
+	font-weight:bold;
+	padding:7px 17px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.signupbtn:hover {
+	background:linear-gradient(to bottom, #f5f2f5 5%, #d6d6d6 100%);
+	background-color:#f5f2f5;
+}
+.signupbtn:active {
+	position:relative;
+	top:1px;
+}

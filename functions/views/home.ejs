@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Calculus Cracker</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Alatsi|Ubuntu&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/the-big-picture.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src = "scripts/home.js"></script>
+
+</head>
+<body onload = "start()">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" style = "font-size: 40px; color: white">Calculus Cracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#" style = "font-size: 30px; color: white">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick = "gotoportal()" style = "font-size: 30px; color: white">Portal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick = "gotoresources()" style = "font-size: 30px; color: white">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "loginBtn" onclick = "gotosignin()" style = "font-size: 30px; color: white">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "welcomeText" style = "font-size: 30px; color: white"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id = "logoutBtn" onclick = "logout()" style = "font-size: 30px; color: white">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Page Content -->
+<section>
+    <div id = "intro">
+
+
+        <h1 class="mt-5">Calculus Cracker</h1>
+        <p>Welcome to calculus cracker, the only <br>handwritten calculus solver on the web!<br>
+          Here, you will be able to solve <br>any calculus problem your heart desires,
+          ranging from definite integrals to limits <br>approaching infinity.<br>Remember to create an account
+          and save your answers, since you never know <br>when you'll want to know what the first derivative of 2x is.<br>
+          Most importantly, never use this website <br>to cheat on your high school math test!</p>
+
+
+    </div>
+</section>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>

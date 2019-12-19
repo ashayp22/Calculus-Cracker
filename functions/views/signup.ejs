@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Calculus Cracker</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baskervville&display=swap" rel="stylesheet">
+
+
+  <!-- Custom styles for this template -->
+  <link href="css/signin.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src = "scripts/signup.js"></script>
+
+
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-bottom">
+    <div class="container">
+      <a class="navbar-brand" style = "font-size: 40px; color: white">Calculus Cracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" onclick = "gotohome()" style = "font-size: 30px; color: white">Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick = "gotoportal()" style = "font-size: 30px; color: white">Portal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick = "gotoresources()" style = "font-size: 30px; color: white">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick = "gotosignin()" style = "font-size: 30px; color: white">Log In</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id = "data">
+    <h1>Sign Up for Free!</h1>
+<p id = "message"></p>
+    <div>
+        <label class = "text" for="text">Name</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+        <label class = "text" for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+        <label class = "text" for="text">Password</label>
+        <input type="text" id="password" name="password" required>
+    </div>
+    <button class = "signupbtn" onclick = "signup()">Sign Up</button>
+</div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

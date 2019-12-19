@@ -1,0 +1,28 @@
+body {
+    background: url('handwritten.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  font-family: 'Baskervville', serif;
+  text-align: center;
+}
+
+#logoutBtn {
+  display: none;
+}
+
+#data {
+  background-color: #0DE1CF;
+  border: 7px ridge #12F2A9;
+  display: inline-block;
+  width: 60%;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+ p {
+   font-size: 30px;
+ }

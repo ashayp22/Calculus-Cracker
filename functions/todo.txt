@@ -1,0 +1,13 @@
+
+
+5.)save image to firebase
+
+from focus group
+
+- buttons instead of text field
+- only input field with all equations
+- super scripts and sub scripts
+- photo math instantaneous calculation?
+
+
+------------------------------------------
