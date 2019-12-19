@@ -1,6 +1,14 @@
 # Calculus-Cracker
 final project for mobile apps, solve handwritten calculus problems using convolutional neural networks, segmentation, and parsing
 
+
+prerequisites:
+
+- need a firebase account
+- need the firebase command line
+- need node.js
+- need the dependencies found in index.js
+
 files & description:
 
 views:
