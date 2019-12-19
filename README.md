@@ -1,5 +1,5 @@
 # Calculus-Cracker
-final project for mobile apps, solve handwritten calculus problems
+final project for mobile apps, solve handwritten calculus problems using convolutional neural networks, segmentation, and parsing
 
 files & description:
 
