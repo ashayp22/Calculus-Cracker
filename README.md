@@ -154,7 +154,7 @@ You should now recieve a local link to the web app.
 
 ## License ##
 
-This project is licensed under the Gnu General Public License - see the [LICENSE.md](https://github.com/ashayp22/WordSearchSolver/blob/master/LICENSE) file for details
+This project is licensed under the Gnu General Public License - see the [LICENSE.md](https://github.com/ashayp22/Calculus-Cracker/blob/master/LICENSE) file for details
 
 
 
