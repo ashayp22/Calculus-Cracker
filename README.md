@@ -1,6 +1,18 @@
 # Calculus Cracker
 
-Calculus Cracker was my 1st semester final project for my Mobile Application Development class during Junior Year. The project is a web app that allows students to create accounts and obtain solutions to calculus problems. The web app uses Firebase to keep track of student accounts and allow students to sign up/sign in. In addition, the web app gives students the choice of typing their problem, clicking their problem, and writing their problem. Once the user inputs their problem, the user input is sent to the web server and the  web server uses Segmentation, Parsing, and a Covolutional Neural Network to convert the user input into a readable data format for the computer. After this happens, the web server solves the calculus problem using math modules and then sends the answer back to the student. After seeing the answer, the user has an opportunity to save the answer for future reference. The web app supports the following calculus functionalities: Derivatives, Integrals, Sums, and Products. 
+### Calculus Cracker was my 1st semester final project for my Mobile Application Development class during Junior Year. ###
+
+The project is a web app that allows students to create accounts and obtain solutions to calculus problems. The web app uses Firebase, Keras (Python), Node.js, and HTML/CSS. 
+
+The web app allows students to sign up/sign in and then input their problem. The user does this by:
+
+1. typing their problem
+2. clicking their problem
+3. writing their problem
+
+Once this happens, the problem is sent to the web server and the web server uses Segmentation, Parsing, and a Covolutional Neural Network to convert the user input into a readable data format for the computer. After this happens, the web server solves the calculus problem using math modules and then sends the answer back to the student. After seeing the answer, the student has an opportunity to save the answer for future reference. The student can also use the resources provided by the website to solve the problem by their own, which includes PDFs on calculus/trigonometry rules and calculus to math tutorials.
+
+The web app supports the following calculus functionalities: Derivatives, Integrals, Sums, and Products. After being developed for the class, I decided not to pursue deploying the app and instead leave it open source for anyone to use as a template for their own project. Please state somewhere that I am the author of the original code.
 
 ## Getting Started
 
@@ -102,6 +114,40 @@ You should now recieve a local link to the web app.
 
 ## File Descriptions
 
+##### /functions/views: #####
+- home.ejs: displays home page
+    - css: the-big-picture.css
+    - js: home.js
+- portal.ejs: calculating & handwritting page
+    - css: portal.css 
+    - js: main.js
+- resources.ejs: shows calculus resources 
+    - css: portal.css 
+    - js: portal.js
+- signin.ejs: login page
+    - css: signin.style
+    - js: signin.js
+- signup.ejs: signup page
+    - css: signin.css
+    - js: signup.js
+
+
+json:
+- char: returns the mathematical equation the computer predicted from the handwritting
+- data: data for solving the calculus problem
+- answer: has the answer to the calculus problem
+
+python
+- drawn: able to test CNN model by drawing on python canvas
+- evaluate: evaluate trained model on test dataset
+- model: create & train a model on mathematical symbols, numbers, and letters dataset, plus saving the model
+- model2:create & train a model on letters dataset, plus saving the model
+-calculate: classify a single handwritten symbols
+-calculate2: classify multiple handwritten symbols
+-solve: solve the calculus problem
+
+node.js:
+- index: all node code here
 
 
 ## Authors
