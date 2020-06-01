@@ -131,24 +131,22 @@ You should now recieve a local link to the web app.
     - css: signin.css
     - js: signup.js
 
+##### JSON: #####
+- char.json: returns the mathematical equation the computer predicted from the handwritting
+- data.json: data for solving the calculus problem
+- answer.json: has the answer to the calculus problem
 
-json:
-- char: returns the mathematical equation the computer predicted from the handwritting
-- data: data for solving the calculus problem
-- answer: has the answer to the calculus problem
+##### Python #####
+- drawn.py: able to test CNN model by drawing on python canvas
+- evaluate.py: evaluate trained model on test dataset
+- model.py: create & train a model on mathematical symbols, numbers, and letters dataset, plus saving the model
+- model2.py:create & train a model on letters dataset, plus saving the model
+- calculate.py: classify a single handwritten symbols
+- calculate2.py: classify multiple handwritten symbols
+- solve.py: solve the calculus problem
 
-python
-- drawn: able to test CNN model by drawing on python canvas
-- evaluate: evaluate trained model on test dataset
-- model: create & train a model on mathematical symbols, numbers, and letters dataset, plus saving the model
-- model2:create & train a model on letters dataset, plus saving the model
--calculate: classify a single handwritten symbols
--calculate2: classify multiple handwritten symbols
--solve: solve the calculus problem
-
-node.js:
-- index: all node code here
-
+###### Node.js #####:
+- index.js: All of the node code is here
 
 ## Authors
 
