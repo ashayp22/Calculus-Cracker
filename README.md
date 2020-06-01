@@ -145,14 +145,14 @@ You should now recieve a local link to the web app.
 - calculate2.py: classify multiple handwritten symbols
 - solve.py: solve the calculus problem
 
-##### Node.js #####:
+##### Node.js #####
 - index.js: All of the node code is here
 
-## Authors
+## Authors ##
 
 * **Ashay Parikh** - [more details](https://ashayp.com/)
 
-## License
+## License ##
 
 This project is licensed under the Gnu General Public License - see the [LICENSE.md](https://github.com/ashayp22/WordSearchSolver/blob/master/LICENSE) file for details
 
