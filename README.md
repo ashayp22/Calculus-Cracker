@@ -145,7 +145,7 @@ You should now recieve a local link to the web app.
 - calculate2.py: classify multiple handwritten symbols
 - solve.py: solve the calculus problem
 
-###### Node.js #####:
+##### Node.js #####:
 - index.js: All of the node code is here
 
 ## Authors
