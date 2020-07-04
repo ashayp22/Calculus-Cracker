@@ -10,7 +10,7 @@ The web app allows students to sign up/sign in and then input their problem. The
 2. clicking their problem
 3. writing their problem
 
-Once this happens, the problem is sent to the web server and the web server uses Segmentation, Parsing, and a Covolutional Neural Network to convert the user input into a readable data format for the computer. After this happens, the web server solves the calculus problem using math modules and then sends the answer back to the student. After seeing the answer, the student has an opportunity to save the answer for future reference. The student can also use the resources provided by the website to solve the problem by their own, which includes PDFs on calculus/trigonometry rules and calculus to math tutorials.
+Once this happens, the problem is sent to the web server and the web server uses Segmentation, Parsing, and a Convolutional Neural Network to convert the user input into a readable data format for the computer. After this happens, the web server solves the calculus problem using math modules and then sends the answer back to the student. After seeing the answer, the student has an opportunity to save the answer for future reference. The student can also use the resources provided by the website to solve the problem by their own, which includes PDFs on calculus/trigonometry rules and calculus to math tutorials.
 
 The web app supports the following calculus functionalities: Derivatives, Integrals, Sums, and Products. After being developed for the class, I decided not to pursue deploying the app and instead leave it open source for anyone to use as a template for their own project. Please state somewhere that I am the author of the original code.
 
