@@ -16,6 +16,13 @@ Once this happens, the problem is sent to the web server and the web server uses
 
 The web app supports the following calculus functionalities: Derivatives, Integrals, Sums, and Products. After being developed for the class, I decided not to pursue deploying the app and instead leave it open source for anyone to use as a template for their own project. Please state somewhere that I am the author of the original code.
 
+### Features
+
+* Authentication System Using Firebase
+* Responsive Design
+* User Interactivity
+* Real-time Calculus Solver using Deep Learning and Math Modules
+
 ## Getting Started
 
 These instructions will get you a copy of the web app running on your local machine for development and testing purposes.
