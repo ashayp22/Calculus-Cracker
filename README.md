@@ -2,6 +2,8 @@
 
 ### Calculus Cracker was my 1st semester final project for my Mobile Application Development class during Junior Year. ###
 
+![Preview](https://github.com/ashayp22/Calculus-Cracker/blob/master/preview.png)
+
 The project is a web app that allows students to create accounts and obtain solutions to calculus problems. The web app uses Firebase, Keras (Python), Node.js, and HTML/CSS. 
 
 The web app allows students to sign up/sign in and then input their problem. The user does this by:
