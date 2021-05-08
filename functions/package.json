@@ -23,7 +23,7 @@
     "firebase-functions": "^3.3.0",
     "formidable": "^1.2.1",
     "fs": "0.0.1-security",
-    "handlebars": "^4.5.3",
+    "handlebars": "^4.7.7",
     "multipart-raw-parser": "^0.6.2",
     "multiparty": "^4.2.1",
     "mv": "^2.1.1",
