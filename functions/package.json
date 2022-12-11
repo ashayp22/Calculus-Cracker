@@ -16,7 +16,7 @@
     "child_process": "^1.0.2",
     "consolidate": "^0.15.1",
     "ejs": "^2.7.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-session": "^1.17.0",
     "firebase": "^7.4.0",
     "firebase-admin": "^8.7.0",
